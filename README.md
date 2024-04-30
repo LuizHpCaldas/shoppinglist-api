@@ -51,3 +51,57 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar
 ## Licença
 
 Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
+
+# Shopping List Application - Spring Boot
+
+This is a shopping list application developed with Spring Boot, Angular, and H2 Database. It allows users to create shopping lists, add items to those lists, mark items as purchased during shopping, and calculate the partial total of the marked items.
+
+## Prerequisites
+
+Make sure you have the following installed on your machine:
+- Java JDK 8 or higher
+- Maven
+- Node.js and Angular CLI (if you want to run the Angular frontend locally)
+
+## Running the Application
+
+1. **Backend (Spring Boot):**
+   - Navigate to the `backend` directory:
+     ```
+     cd backend
+     ```
+   - Execute the following command to start the Spring Boot server:
+     ```
+     mvn spring-boot:run
+     ```
+
+2. **Frontend (Angular):**
+   - Navigate to the `frontend` directory:
+     ```
+     cd frontend
+     ```
+   - Execute the following command to install Angular dependencies:
+     ```
+     npm install
+     ```
+   - Start the Angular development server:
+     ```
+     ng serve
+     ```
+   - Open your browser and navigate to `http://localhost:4200/` to view the frontend application.
+
+## Accessing the H2 Database
+
+- The H2 console can be accessed at `http://localhost:8080/h2-console` while the Spring Boot application is running.
+- Use the following settings to connect to the database:
+  - JDBC URL: `jdbc:h2:mem:testdb`
+  - Username: `sa`
+  - Password: leave blank or remove
+
+## Contribution
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
